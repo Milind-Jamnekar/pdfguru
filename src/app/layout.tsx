@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import React from "react";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import Provider from "@/app/_trpc/Provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,8 +26,12 @@ export default function RootLayout({
           inter.className,
         )}
       >
-        <Navbar />
-        {children}
+        <Provider>
+          <>
+            <Navbar />
+            {children}
+          </>
+        </Provider>
       </body>
     </html>
   );
