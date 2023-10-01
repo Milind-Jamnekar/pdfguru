@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de8f54a-5cb4-47d8-8619-28120c1a404d" name="Changes" comment="">
+    <list default="true" id="8de8f54a-5cb4-47d8-8619-28120c1a404d" name="Changes" comment="refactoring">
+      <change afterPath="$PROJECT_DIR$/src/app/_trpc/Provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/_trpc/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/trpc/[trpc]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/trpc.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/trpc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/auth/[kindeAuth]/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Container.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ui/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
     <scope name="Dev" pattern="!file[pdfguru]:.idea//*&amp;&amp;!file[pdfguru]:public//*&amp;&amp;!file:.eslintrc.json&amp;&amp;!file:.gitignore&amp;&amp;!file:README.md&amp;&amp;!file:postcss.config.js&amp;&amp;!file:pnpm-lock.yaml" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -69,6 +65,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\milin\Desktop\Project\fullstack\pdfguru\src\app\_trpc" />
       <recent name="C:\Users\milin\Desktop\Project\fullstack\pdfguru\src" />
       <recent name="C:\Users\milin\Desktop\Project\fullstack\pdfguru" />
       <recent name="C:\Users\milin\Desktop\Project\fullstack\pdfguru\app\lib" />
@@ -108,6 +105,7 @@
       <workItem from="1696083271005" duration="3098000" />
       <workItem from="1696163075556" duration="1559000" />
       <workItem from="1696164693888" duration="64000" />
+      <workItem from="1696164802946" duration="3956000" />
     </task>
     <task id="LOCAL-00001" summary="auth added">
       <option name="closed" value="true" />
@@ -125,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696145997372</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1696165257193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696165257193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +148,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit from Create Next App" />
     <MESSAGE value="auth added" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth added" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>
