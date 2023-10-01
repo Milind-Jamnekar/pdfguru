@@ -1,9 +1,9 @@
 // import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-// import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-import Container from "@/app/components/Container";
+import { buttonVariants } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 export default function HomePage() {
   return (
@@ -32,10 +32,10 @@ export default function HomePage() {
         </p>
 
         <Link
-          // className={buttonVariants({
-          //   size: "lg",
-          //   className: "mt-5",
-          // })}
+          className={buttonVariants({
+            size: "lg",
+            className: "mt-5",
+          })}
           href="/dashboard"
           target="_blank"
         >
