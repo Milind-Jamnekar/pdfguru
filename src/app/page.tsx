@@ -5,8 +5,12 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import Container from "@/components/Container";
+import { trpc } from "./_trpc/client";
 
 export default function HomePage() {
+  const { data: user, isLoading } = trpc.authCallback.useQuery();
+  console.log(user);
+
   return (
     <>
       <Container

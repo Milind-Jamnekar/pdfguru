@@ -5,7 +5,9 @@ import { redirect } from "next/navigation";
 
 const DashBoardPage = () => {
   const { getUser } = getKindeServerSession();
+
   const user = getUser();
+
   if (!user || !user.id) redirect("/auth-callback?origin=dashboard");
 
   const dbUser = db.user.findFirst({ where: { id: user.id } });

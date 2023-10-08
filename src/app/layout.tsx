@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Provider from "@/app/_trpc/Provider";
 
+import "react-loading-skeleton/dist/skeleton.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen font-sans antialiased grainy",
-          inter.className,
+          inter.className
         )}
       >
         <Provider>
