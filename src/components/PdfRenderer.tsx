@@ -32,6 +32,7 @@ import SimpleBar from "simplebar-react";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import PdfFullscreen from "./PdfFullscreen";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -69,8 +70,6 @@ const PdfRenderer = ({ file }: PdfRendererProps) => {
     },
     resolver: zodResolver(CustomPageValidator),
   });
-
-  console.log(errors);
 
   const { width, ref } = useResizeDetector();
 
@@ -162,7 +161,7 @@ const PdfRenderer = ({ file }: PdfRendererProps) => {
             <RotateCw className="h-4 w-4" />
           </Button>
 
-          {/* <PdfFullscreen fileUrl={url} /> */}
+          <PdfFullscreen fileUrl={file} />
         </div>
       </div>
 
